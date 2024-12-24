@@ -1,10 +1,10 @@
 // Importing dependencies
 const express = require('express'); // Express framework to build our API
-const connectDB = require('./config/db'); // Function to connect to the MongoDB database
-const logger = require('./utils/logger'); // Custom logger to log incoming requests and other details
+const connectDB = require('./src/backend/config/db'); // Function to connect to the MongoDB database
+const logger = require('./src/backend/utils/logger'); // Custom logger to log incoming requests and other details
 const path = require('path'); // Node.js module for handling and transforming file paths
-const config = require('./config/config'); // Configuration file (e.g., PORT and MONGO_URI)
-const apiRoutes = require('./routes/api'); // Routes for our API (we'll define this in the routes folder)
+const config = require('./src/backend/config/config'); // Configuration file (e.g., PORT and MONGO_URI)
+const apiRoutes = require('./src/backend/routes/api'); // Routes for our API (we'll define this in the routes folder)
 
 // Initialize Express app
 const app = express();

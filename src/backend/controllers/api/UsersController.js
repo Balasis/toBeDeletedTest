@@ -1,5 +1,5 @@
 // controllers/UserController.js
-const User = require('../models/UserModel');
+const User = require('../../models/UserModel');
 
 //You might as well have different models for each ; ...
 // Controller function to get a premium user by ID
